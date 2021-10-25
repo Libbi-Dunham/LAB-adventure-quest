@@ -11,11 +11,45 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Home Page</title>
 </head>
 
 <body>
-    <h1>home page</h1>
+   <form id="user-form">
+       <label for="name">
+           Avatar Name:
+           <input name="name" type="text">
+       </label>
+       <legend>Pick Your Avatar:</legend>
+       <p id="character">
+           <label>
+               <input type="radio" name="avatar" required value="harry">
+               <img>
+               Harry Potter
+           </label>
+           <label>
+            <input type="radio" name="avatar" required value="hermione">
+            <img>
+            Hermione Granger
+        </label>
+        <label>
+            <input type="radio" name="avatar" required value="ron">
+            <img>
+            Ron Weasley
+        </label>
+        <label>
+            <input type="radio" name="avatar" required value="voldemort">
+            <img>
+            Lord Voldemort
+        </label>
+        <label>
+            <input type="radio" name="avatar" required value="dumbledore">
+            <img>
+            Albus Dumbledore
+        </label>
+       </p>
+
+   </form>
 
     <script type="module" src="./app.js"></script>
 </body>
