@@ -1,10 +1,14 @@
 import quests from '../data/quest-data.js';
-import { getUser } from '../utils.js';
+import { getUser, hasCompletedAllQuests } from '../utils.js';
 
 const mapLinks = document.getElementById('map-links');
 console.log(mapLinks);
 
 const user = getUser();
+if (user.hp <= 0 || hasCompletedAllQuests(user)){
+    window.location.replace('../gameover');
+}
+
 for (let quest of quests){
     console.log(quest.id);
     console.log(user);
