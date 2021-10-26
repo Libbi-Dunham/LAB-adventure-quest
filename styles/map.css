@@ -1,0 +1,4 @@
+#map-links {
+    display: flex;
+    flex-direction: column;
+}
