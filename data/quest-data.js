@@ -5,7 +5,7 @@ const dragons = {
         top: '20%',
         left: '20%'
     },
-    image: '',
+    image: 'dragon.png',
     description: `
         You have entered the arena to snatch the golden egg from a nest but to get it you have to get around the dragon! What do you do?
     `,
@@ -43,7 +43,7 @@ const lake = {
         top: '20%',
         left: '20%'
     },
-    image: '',
+    image: 'lake.jpg',
     description: `
         You are down at Hogwarts Lake to retrieve something valuable but there are mermaids you have to get around. What do you do?
     `,
@@ -81,7 +81,7 @@ const labyrinth = {
         top: '20%',
         left: '20%'
     },
-    image: '',
+    image: 'maze.jpg',
     description: `
         You have entered the trap-laden labyrinth and have to make your way through and retrieve the Triwizard Cup. Although at the end once you grab the cup you relize it was a portkey and have to face Voldemort. What do you do?
     `,
