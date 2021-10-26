@@ -1,4 +1,4 @@
-import { generateUser, setUser } from '../utils.js';
+import { generateUser, setUser, getUser, scoreQuest } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -42,4 +42,44 @@ test('setUser should save user to localStorage', (expect) => {
 
    
     expect.deepEqual(actual, userObject);
+});
+
+test('getUser should return the user object from localStorage', (expect)=>{
+    const userObject = {
+        completed: {},
+        gold: 60,
+        hp: 10,
+        name: 'libbi',
+        avatar: 'harry',
+    };
+
+    setUser(userObject);
+    const actual = getUser();
+    expect.deepEqual(actual, userObject);
+});
+
+test('scoreQuest should update gold, hp and completed on the userObject', (expect)=>{
+    const userObject = {
+        completed: {},
+        gold: 60,
+        hp: 10,
+        name: 'libbi',
+        avatar: 'harry',
+    };
+    const choiceObject = {
+        id: 'fly',
+        description: 'Fly Away!',
+        result: `
+        Knowing that, that would be a dangerous choice because there is no where to go. A total of 20 gold is take and 10 hp!.
+    `,
+        hp: -10,
+        gold: -20
+    };
+    const questId = 'labyrinth';
+
+    scoreQuest(choiceObject, questId, userObject);
+
+    expect.equal(userObject.hp, 0);
+    expect.equal(userObject.gold, 40);
+    expect.equal(userObject.completed[questId], true);
 });

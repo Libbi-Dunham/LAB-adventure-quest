@@ -25,3 +25,10 @@ export function getUser(){
     const userString = localStorage.getItem('USER');
     return JSON.parse(userString);
 }
+
+export function scoreQuest(choiceObject, questId, userObject){
+userObject.hp += choiceObject.hp;
+userObject.gold += choiceObject.gold;
+userObject.completed[questId] = true;
+
+}
