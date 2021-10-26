@@ -1,15 +1,15 @@
 const dragons = {
     id: 'dragons',
-    title: 'task one'
+    title: 'task one',
     map: {
         top: '20%',
         left: '20%'
     },
-    image: 
+    image: '',
     description: `
         You have entered the arena to snatch the golden egg from a nest but to get it you have to get around the dragon! What do you do?
     `,
-    choices [{
+    choices: [{
         id: 'fly',
         description: 'Fly Away!',
         result: `
@@ -34,7 +34,7 @@ const dragons = {
         hp: -5,
         gold: -35
     }]
-},
+}; 
 
 const lake = {
     id: 'lake',
@@ -43,7 +43,7 @@ const lake = {
         top: '20%',
         left: '20%'
     },
-    image:
+    image: '',
     description: `
         You are down at Hogwarts Lake to retrieve something valuable but there are mermaids you have to get around. What do you do?
     `,
@@ -53,8 +53,8 @@ const lake = {
         result: `
         Knowing that is against the rules of the Triwizard Tournament you have lost the first task. A total of 40 gold has been taken.
     `,
-    hp: 0,
-    gold: -40
+        hp: 0,
+        gold: -40
     }, {
         id: 'fight',
         description: 'Retrieve the Valuable',
@@ -72,7 +72,7 @@ const lake = {
         hp: -5,
         gold: -35
     }]
-},
+};
 
 const labyrinth = {
     id: 'labyrinth',
@@ -81,7 +81,7 @@ const labyrinth = {
         top: '20%',
         left: '20%'
     },
-    image:
+    image: '',
     description: `
         You have entered the trap-laden labyrinth and have to make your way through and retrieve the Triwizard Cup. Although at the end once you grab the cup you relize it was a portkey and have to face Voldemort. What do you do?
     `,
@@ -91,8 +91,8 @@ const labyrinth = {
         result: `
         Knowing that, that would be a dangerous choice because there is no where to go. A total of 20 gold is take and 10 hp!.
     `,
-    hp: -10,
-    gold: -20
+        hp: -10,
+        gold: -20
     }, {
         id: 'fight',
         description: 'Retrieve the Valuable',
@@ -110,7 +110,7 @@ const labyrinth = {
         hp: -5,
         gold: -35
     }]
-},
+};
 
 const quests = [
     dragons,
