@@ -6,6 +6,9 @@ console.log(mapLinks);
 
 const user = getUser();
 for (let quest of quests){
+    console.log(quest.id);
+    console.log(user);
+
     if (user.completed[quest.id]){
         displaySpan(quest);
     } else {
