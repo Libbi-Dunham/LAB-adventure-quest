@@ -37,7 +37,6 @@ export function scoreQuest(choiceObject, questId, userObject){
 
 export function hasCompletedAllQuests(userObject){
     for (let quest of quests){
-        console.log(quest);
         if (!userObject.completed[quest.id]){
             return false;
         }
@@ -50,6 +49,7 @@ export function loadProfile(){
     
     const img = document.getElementById('user-image');
     img.src = `../assets/${user.avatar}.png`;
+    console.log(user);
     const name = document.getElementById('user-name');
     name.textContent = user.name;
     const gold = document.getElementById('user-gold');

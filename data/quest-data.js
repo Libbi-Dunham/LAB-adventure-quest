@@ -2,7 +2,7 @@ const dragons = {
     id: 'dragons',
     title: 'task one',
     map: {
-        top: '89%',
+        top: '50%',
         left: '44%'
     },
     image: 'dragon.png',
@@ -78,7 +78,7 @@ const labyrinth = {
     id: 'labyrinth',
     title: 'task three',
     map: {
-        top: '31%',
+        top: '35%',
         left: '5%'
     },
     image: 'maze.jpg',
