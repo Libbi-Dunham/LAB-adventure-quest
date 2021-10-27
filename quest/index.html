@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./quest.css">
     <title>Quest Page</title>
 </head>
 <body>
-    <h1>Quest Page</h1>
+    <h1>Quest</h1>
+    <h1 id="quest-title">Quest Title</h1>
+    <img id="quest-image" src="../assets/dragon.png" alt="picture of each quest">
+    <div id="quest-details" class="quest-details">
+    <p id="quest-description">dragon</p>
+    <form id="quest-choices"></form>
+</div>
+<div id="results" class="hidden"></div>
     
     <script src="./quest.js" type="module"></script>
 </body>

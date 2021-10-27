@@ -12,45 +12,49 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/map.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/kjv-1611" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ackermann" type="text/css"/>
     <title>Home Page</title>
 </head>
 
 <body>
+    <h1>Adventure Through Triwizard Tournement!</h1>
    <form id="user-form">
-       <label for="name">
+       <label id="name-label" for="name">
            Avatar Name:
-           <input name="name" type="text">
+           <input id="name" name="name" type="text">
        </label>
        <legend>Pick Your Avatar:</legend>
        <p id="character">
            <label>
                <input type="radio" name="avatar" required value="harry">
-               <img>
+               <img src="assets/harry.jpg">
                Harry Potter
            </label>
            <label>
             <input type="radio" name="avatar" required value="hermione">
-            <img>
+            <img src="assets/hermine.jpg">
             Hermione Granger
         </label>
         <label>
             <input type="radio" name="avatar" required value="ron">
-            <img>
+            <img src="assets/ron.jpg">
             Ron Weasley
         </label>
         <label>
             <input type="radio" name="avatar" required value="voldemort">
-            <img>
+            <img src="assets/voldemort.png">
             Lord Voldemort
         </label>
         <label>
             <input type="radio" name="avatar" required value="dumbledore">
-            <img>
+            <img src="assets/albus.jpg">
             Albus Dumbledore
         </label>
        </p>
+       <button id="button">Choose!</button>
+    </form>
 
-   </form>
 
     <script type="module" src="./app.js"></script>
 </body>
