@@ -3,7 +3,7 @@ const dragons = {
     title: 'task one',
     map: {
         top: '50%',
-        left: '44%'
+        left: '50%'
     },
     image: 'dragon.png',
     description: `
@@ -13,9 +13,9 @@ const dragons = {
         id: 'fly',
         description: 'Fly Away!',
         result: `
-            Knowing that is against the rules of the Triwizard Tournament you have lost the first task. A total of 40 gold has been taken.
+            Knowing that is against the rules of the Triwizard Tournament you have lost the first task. A total of 40 gold has been taken and 100 hp.
         `,
-        hp: 0,
+        hp: -100,
         gold: -40
     }, {
         id: 'fight',
@@ -29,9 +29,9 @@ const dragons = {
         id: 'hide',
         description: 'Hide under your invisibility cloak',
         result: `
-            Due to your actions of hiding and not praticpating in the task you loose 35 gold and 5 hp!
+            Due to your actions of hiding and not praticpating in the task you loose 35 gold and 35 hp!
         `,
-        hp: -5,
+        hp: -35,
         gold: -35
     }]
 }; 
@@ -40,10 +40,10 @@ const lake = {
     id: 'lake',
     title: 'task two',
     map: {
-        top: '17%',
-        left: '37%'
+        top: '15%',
+        left: '50%'
     },
-    image: 'lake.jpg',
+    image: 'lake.png',
     description: `
         You are down at Hogwarts Lake to retrieve something valuable but there are mermaids you have to get around. What do you do?
     `,
@@ -59,17 +59,17 @@ const lake = {
         id: 'fight',
         description: 'Retrieve the Valuable',
         result: `
-            After swimming through the lake and fighting off the mermaids you have reached your valuable possession and resqued him and your teammates valuable as well! You are rewarded 100 gold and 30 hp!
+            After swimming through the lake and fighting off the mermaids you have reached your valuable possession and resqued him and your teammates valuable as well! You are rewarded 100 gold and 50 hp!
         `,
-        hp: 100,
-        gold: 30
+        hp: 50,
+        gold: 100
     }, {
         id: 'hide',
         description: 'Hide under your invisibility cloak',
         result: `
             Due to your actions of hiding and not praticpating in the task you loose 35 gold and 5 hp!
         `,
-        hp: -5,
+        hp: -55,
         gold: -35
     }]
 };
@@ -81,7 +81,7 @@ const labyrinth = {
         top: '35%',
         left: '5%'
     },
-    image: 'maze.jpg',
+    image: 'maze.png',
     description: `
         You have entered the trap-laden labyrinth and have to make your way through and retrieve the Triwizard Cup. Although at the end once you grab the cup you relize it was a portkey and have to face Voldemort. What do you do?
     `,

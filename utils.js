@@ -3,8 +3,8 @@ import quests from './data/quest-data.js';
 export function generateUser(formData){
     return {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: formData.get('name'),
         avatar: formData.get('avatar'),
     };

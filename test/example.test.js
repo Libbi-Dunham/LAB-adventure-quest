@@ -7,8 +7,8 @@ test('generateUser should return a userObject', (expect) => {
     // Set up your arguments and expectations
     const expected = {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: 'libbi',
         avatar: 'harry',
     };
@@ -29,8 +29,8 @@ test('setUser should save user to localStorage', (expect) => {
     localStorage.removeItem('USER');
     const userObject = {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: 'libbi',
         avater: 'harry',
     };
@@ -47,8 +47,8 @@ test('setUser should save user to localStorage', (expect) => {
 test('getUser should return the user object from localStorage', (expect)=>{
     const userObject = {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: 'libbi',
         avatar: 'harry',
     };
@@ -61,8 +61,8 @@ test('getUser should return the user object from localStorage', (expect)=>{
 test('scoreQuest should update gold, hp and completed on the userObject', (expect)=>{
     const userObject = {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: 'libbi',
         avatar: 'harry',
     };
@@ -79,8 +79,8 @@ test('scoreQuest should update gold, hp and completed on the userObject', (expec
 
     scoreQuest(choiceObject, questId, userObject);
 
-    expect.equal(userObject.hp, 0);
-    expect.equal(userObject.gold, 40);
+    expect.equal(userObject.hp, 90);
+    expect.equal(userObject.gold, -20);
     expect.equal(userObject.completed[questId], true);
 });
 
