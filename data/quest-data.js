@@ -2,8 +2,8 @@ const dragons = {
     id: 'dragons',
     title: 'task one',
     map: {
-        top: '20%',
-        left: '20%'
+        top: '89%',
+        left: '44%'
     },
     image: 'dragon.png',
     description: `
@@ -40,8 +40,8 @@ const lake = {
     id: 'lake',
     title: 'task two',
     map: {
-        top: '20%',
-        left: '20%'
+        top: '17%',
+        left: '37%'
     },
     image: 'lake.jpg',
     description: `
@@ -78,8 +78,8 @@ const labyrinth = {
     id: 'labyrinth',
     title: 'task three',
     map: {
-        top: '20%',
-        left: '20%'
+        top: '31%',
+        left: '5%'
     },
     image: 'maze.jpg',
     description: `

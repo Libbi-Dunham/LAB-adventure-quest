@@ -16,3 +16,8 @@ h1 {
     flex-direction: column;
     margin: auto;
 }
+
+img {
+    width: 600px;
+    height: 600px;
+}
