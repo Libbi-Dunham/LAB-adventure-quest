@@ -8,3 +8,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+h1 {
+    font-family: 'KJV1611Regular';
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -38,9 +38,10 @@ export function scoreQuest(choiceObject, questId, userObject){
 export function hasCompletedAllQuests(userObject){
     for (let quest of quests){
         console.log(quest);
-        if (userObject.completed[quest.id]){
-            return true;
+        if (!userObject.completed[quest.id]){
+            return false;
         }
     }
-    return false;
+    return true;
 }
+

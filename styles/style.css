@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #98C1D9;
 }
 
 #button {
