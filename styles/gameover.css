@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #98C1D9;
+}
+
+h1 {
+    font-family: 'KJV1611Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'AckermannMedium';
+   font-weight: normal;
+   font-style: italic;
+}
+
+img {
+    width: 600px;
+}

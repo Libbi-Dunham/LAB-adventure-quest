@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #98C1D9;
 }
 
 #button {
@@ -15,6 +16,7 @@ img {
     height: 100px;
     border-radius: 100%;
 }
+
 #name-label{
     display: flex;
     flex-direction: column;

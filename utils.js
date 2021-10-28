@@ -3,8 +3,8 @@ import quests from './data/quest-data.js';
 export function generateUser(formData){
     return {
         completed: {},
-        gold: 60,
-        hp: 10,
+        gold: 0,
+        hp: 100,
         name: formData.get('name'),
         avatar: formData.get('avatar'),
     };
@@ -37,10 +37,23 @@ export function scoreQuest(choiceObject, questId, userObject){
 
 export function hasCompletedAllQuests(userObject){
     for (let quest of quests){
-        console.log(quest);
-        if (userObject.completed[quest.id]){
-            return true;
+        if (!userObject.completed[quest.id]){
+            return false;
         }
     }
-    return false;
+    return true;
+}
+
+export function loadProfile(){
+    const user = getUser();
+    
+    const img = document.getElementById('user-image');
+    img.src = `../assets/${user.avatar}.png`;
+    console.log(user);
+    const name = document.getElementById('user-name');
+    name.textContent = user.name;
+    const gold = document.getElementById('user-gold');
+    gold.textContent = user.gold;
+    const hp = document.getElementById('user-hp');
+    hp.textContent = user.hp;
 }

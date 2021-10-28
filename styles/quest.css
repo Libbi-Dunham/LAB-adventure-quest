@@ -1,37 +1,25 @@
-#map-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("../assets/map.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50vw;
-    height: calc(50vw * 642 / 900);
-    position: relative;
-}
-
-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     background-color: #98C1D9;
 }
 
 h1 {
     font-family: 'KJV1611Regular';
-    font-weight: normal;
-    font-style: normal;
-
+   font-weight: normal;
+   font-style: normal;
 }
 
-.quest {
-    position: absolute;
+#button {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+img {
+    width: 600px;
+    height: 600px;
 }
 
 .header-info{
