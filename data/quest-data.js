@@ -99,7 +99,7 @@ const labyrinth = {
         result: `
             After loosing a great friend Cedric you have no choice but to go against Voldemort. The both of you raise your wands and are battling when you let go, grap the cup, and return to the arena! A total of 200 gold is rewared but 15 hp are taken due to loosing your friend.
         `,
-        hp: -15,
+        hp: 100,
         gold: 200
     }, {
         id: 'hide',

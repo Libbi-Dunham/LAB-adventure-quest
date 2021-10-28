@@ -7,9 +7,16 @@ console.log(mapLinks);
 const user = getUser();
 loadProfile();
 
-if (user.hp <= 0 || hasCompletedAllQuests(user)){
+if (hasCompletedAllQuests(user)){
+    window.location.replace('../win');
+}
+
+if (user.hp <= 0){
     window.location.replace('../gameover');
 }
+// if (user.hp <= 0 || hasCompletedAllQuests(user)){
+//     window.location.replace('../gameover');
+// }
 
 for (let quest of quests){
     console.log(quest.id);

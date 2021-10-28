@@ -21,3 +21,30 @@ img {
     width: 600px;
     height: 600px;
 }
+
+.header-info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+   
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info p {
+    margin: 0;
+    margin-bottom: 5%;
+}
+#user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+header {
+    margin: -7px;
+    margin-left: 80%;
+ }
