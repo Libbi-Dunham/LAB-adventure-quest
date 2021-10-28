@@ -5,6 +5,11 @@ body {
     background-color: #98C1D9;
 }
 
+img {
+    width: 500px;
+    height: 500px;
+}
+
 h1 {
     font-family: 'KJV1611Regular';
     font-weight: normal;
@@ -15,8 +20,4 @@ h2 {
     font-family: 'AckermannMedium';
    font-weight: normal;
    font-style: italic;
-}
-
-img {
-    width: 600px;
 }
